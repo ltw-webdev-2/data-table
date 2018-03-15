@@ -1,0 +1,52 @@
+repo: 'data-table'
+canvasCourse: 'web-dev-2'
+
+inherit:
+  - naming-restrict-live
+  - git-2
+  - html
+  - css
+  - modulifier
+  - typografier
+  - css-order-modules-type-main
+  - screenshots-all
+
+html:
+  - path: 'index.html'
+    has:
+      - 'table'
+      - 'table > thead + tbody + tfoot'
+      - 'table > thead > tr > th[scope="col"]'
+      - 'table > tbody > tr > th[scope="row"]'
+      - 'table > tbody > tr > td'
+      - 'table > tfoot > tr > td[colspan="4"]'
+    search:
+      - 'Exoplanets'
+      - 'NASA has announced the discovery of over 1000 exoplanets—below are five important discoveries.'
+      - 'Name'
+      - 'Orbiting star'
+      - 'Year of discovery'
+      - 'Distance'
+      - 'Notes'
+      - 'PSR B1257\+12 A'
+      - 'Lich pulsar'
+      - '1992'
+      - '2300 ly'
+      - 'First confirmed exoplanet'
+      - '1995'
+      - 'Osiris'
+      - 'PSR B1620-26 & WD B1620-26'
+      - '470 ly'
+      - 'Total'
+
+css:
+  - path: 'css/main.css'
+    has:
+      - ['html', 'font-family', 'Georgia, serif']
+      - ['main', 'background-color', '#f2f2f2']
+      - ['table', 'min-width', '50em']
+      - ['tbody tr:nth-child(odd)', 'background-color', '#e2e2e2']
+      - ['.year', 'width', '7em']
+      - ['.distance', 'width', '6em']
+      - ['.notes', 'width', '16em']
+      - ['@60', '.table-wrapper', 'overflow', 'visible']
